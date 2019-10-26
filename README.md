@@ -1,6 +1,6 @@
 ---
 
-# ansible-isp-speedtest
+# ansible-linux-redis
 
 <img src="https://www.ansible.com/hubfs/2016_Images/Assets/Ansible-Mark-Large-RGB-Pool.png?hsLang=en-us" width="10%" height="10%" alt="Ansible logo" align="right"/>
 
@@ -8,18 +8,15 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/autobuilder/ansible-isp-speedtest/issues)
 
 ![Platform](https://img.shields.io/badge/platform-ubuntu-dd4814.svg?style=flat) 
-![Platform](https://img.shields.io/badge/platform-debian-a80030.svg?style=flat) 
 ![Platform](https://img.shields.io/badge/platform-centos-932279.svg?style=flat)
 
-Ansible role for install [speedtest-cli][speedtestcli] using package manager or pip.
-
-Speedtest-cli outputs will be placed on dedicated directory as json files.
+Ansible role for install [Redis][redisio]
 
 ---
 
 ### Requirements:
 
-* Outbound network connectivity
+* None
 
 ### Dependencies:
 
@@ -31,12 +28,7 @@ Speedtest-cli outputs will be placed on dedicated directory as json files.
 
 | Variable Name | Default Vaule                             | Description               |
 |:--------------|:------------------------------------------|:--------------------------|
-|date           | ```Excution Date```                       | Excution date             |
-|time           | ```Excution Time```                       | Excution time             |
-|log_name       | ```speedtest-{{ date }}-{{ time }}.log``` | Logs name                 |
-|log_path       | ```/tmp/speed_test_cli_logs```            | Logs path                 |
-|output_type    | ```json```                                | Speedtest-cli output type |
-|use_get_url    | ```true```                                | Download  Speedtest-cli   |
+|test           | ```test```                                | test                      |
 
 ---
 
@@ -45,7 +37,7 @@ Speedtest-cli outputs will be placed on dedicated directory as json files.
 ```yaml
 - hosts: servers
   roles:
-    - ansible-isp-speedtest
+    - ansible-linux-redis
 ```
 
 ---
@@ -57,7 +49,6 @@ Tested platforms are the below linux-based distros:
 
 * Ubuntu 16.04
 * Ubuntu 18.04
-* Debian 9
 * Centos 7
 
 ---
@@ -74,7 +65,7 @@ See the [LICENSE][license] file that accompanies this distribution for the full 
 
 [AutoBuilder][autobuilder]
 
-[speedtestcli]: https://github.com/sivel/speedtest-cli
+[redisio]: https://redis.io
 [kitchenci]: https://kitchen.ci
 [apache2]: https://www.apache.org/licenses/LICENSE-2.0.html
 [license]: https://github.com/autobuilder/ansible-isp-speedtest/blob/master/LICENSE
