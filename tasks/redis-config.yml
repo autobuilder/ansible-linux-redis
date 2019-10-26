@@ -5,10 +5,9 @@
     src: redis.conf.j2
     dest: "{{ redis_conf_path }}"
     mode: 0644
-  notify: restart redis
 
 - name: "Config | Verify Redis service is started and enabled"
-  service: 
+  service:
     name: "{{ redis_daemon }}"
     state: started
     enabled: yes
