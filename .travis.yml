@@ -19,11 +19,12 @@ install:
 
 before_script:
   # Use actual Ansible Galaxy role name for the project directory.
-  - echo test
+  - pwd
+  - ls -la
 
 script:
   # Run tests.
-  - ansible-plybook ansible-linux-redis/tests/test.yml
+  - $(which ansible-playbook) ansible-linux-redis/tests/test.yml
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
