@@ -27,9 +27,10 @@ Ansible role for install [Redis][redisio]
 
 ### Variables:
 
-| Variable Name | Default Vaule                             | Description               |
-|:--------------|:------------------------------------------|:--------------------------|
-|test           | ```test```                                | test                      |
+| Variable Name        | Default Vaule                      | Description                 |
+|:---------------------|:-----------------------------------|:----------------------------|
+|redis_port            | ```6379```                         | Redis port to use           |
+|redis_bind_interface  | ```127.0.0.1```                    | Redis IP address to bind to |
 
 ---
 
