@@ -11,11 +11,6 @@ lint:
   options:
     config-file: molecule/default/yaml-lint.yml
 
-platforms:
-  - name: instance
-    image: "ansible:latest"
-    privileged: true
-
 provisioner:
   name: ansible
   lint:
