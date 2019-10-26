@@ -6,7 +6,3 @@ redis_version: ""
 
 redis_port: 6379
 redis_bind_interface: 127.0.0.1
-
-redis_daemon: "{{ (ansible_os_family == 'debian'|lower) | ternary('redis-server','redis') }}"
-redis_package: "{{ (ansible_os_family == 'debian'|lower) | ternary('redis-server','redis') }}"
-redis_conf_path: "{{ (ansible_os_family == 'debian'|lower) | ternary('/etc/redis/redis.conf','/etc/redis.conf') }}"

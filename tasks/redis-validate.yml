@@ -2,10 +2,10 @@
 
 - name: "Validate | Check if ansible major version > 2.x"
   fail:
-    msg: "Ansible version >= 2.x is needed. (current: {{ ansible_version.major }})"
+    msg: "Ansible version >= 2.x is needed. ({{ ansible_version.major }})"
   when: ansible_version.major < 2
 
 - name: "Validate | Check if ansible of family is not (debian|rhel)"
   fail:
-    msg: "Debian or RHEL distros only. (current: {{ ansible_os_family }})"
+    msg: "Debian or RHEL distros only. ({{ ansible_os_family }})"
   when: (ansible_os_family|lower != 'debian') and (ansible_os_family|lower != 'redhat')
