@@ -8,6 +8,6 @@
 - name: "Validate | Check if ansible of family is not (debian|rhel)"
   fail:
     msg: "Debian or RHEL distros only. ({{ ansible_os_family }})"
-  when: 
+  when:
     - (ansible_os_family|lower != 'debian')
     - (ansible_os_family|lower != 'redhat')
