@@ -1,0 +1,19 @@
+---
+
+- name: "Install | Ensure Redis is installed"
+  apt:
+    name: "{{ redis_package }}"
+    state: present
+  when: ansible_os_family|lower == 'debian'
+
+- name: "Install | Update epel-release"
+  yum:
+    name: epel-release
+    state: present
+  when: ansible_os_family|lower == 'redhat'
+
+- name: "Install | Get Redis using Yum"
+  yum:
+    name: "{{ redis_package }}"
+    state: present
+  when: ansible_os_family|lower == 'redhat'

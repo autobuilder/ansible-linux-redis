@@ -3,6 +3,7 @@
 # ansible-linux-redis
 
 <img src="https://www.ansible.com/hubfs/2016_Images/Assets/Ansible-Mark-Large-RGB-Pool.png?hsLang=en-us" width="10%" height="10%" alt="Ansible logo" align="right"/>
+<img src="https://avatars1.githubusercontent.com/u/1529926?s=400&v=4" width="11%" height="11%" alt="Redis logo" align="right"/>
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat)](https://opensource.org/licenses/Apache-2.0)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/autobuilder/ansible-isp-speedtest/issues)
@@ -26,9 +27,10 @@ Ansible role for install [Redis][redisio]
 
 ### Variables:
 
-| Variable Name | Default Vaule                             | Description               |
-|:--------------|:------------------------------------------|:--------------------------|
-|test           | ```test```                                | test                      |
+| Variable Name        | Default Vaule                      | Description                 |
+|:---------------------|:-----------------------------------|:----------------------------|
+|redis_port            | ```6379```                         | Redis port to use           |
+|redis_bind_interface  | ```127.0.0.1```                    | Redis IP address to bind to |
 
 ---
 
