@@ -20,4 +20,4 @@ platforms:
   - name: centos-7
 
 suites:
-- name: default
+  - name: default
