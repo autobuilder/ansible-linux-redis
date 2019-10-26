@@ -1,1 +1,16 @@
 ---
+
+- name: "include redis-validate.yml"
+  include_tasks: redis-validate.yml
+  tags:
+    validate
+
+- name: "include redis-install.yml"
+  include_tasks: redis-install.yml
+  tags:
+    install
+
+- name: "include redis-config.yml"
+  include_tasks: redis-config.yml
+  tags:
+    config

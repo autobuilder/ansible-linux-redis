@@ -1,0 +1,16 @@
+---
+
+- name: "Validate | Check if ansible major version > 2.x"
+  fail:
+    msg: >
+      This role should run with Ansible version 2.x. (current: {{ ansible_version.major }})
+  when:
+    - ansible_version.major < 2
+
+- name: "Validate | Check if ansible of family is not (debian|rhel)"
+  fail:
+    msg: >
+      This role support Debian or RHEL distros. (current: {{ ansible_os_family }})
+  when:
+    - (ansible_os_family|lower != 'debian')
+    - (ansible_os_family|lower != 'redhat')
