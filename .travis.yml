@@ -7,9 +7,9 @@ env:
   global:
     - ROLE_NAME: ansible-linux-redis
   matrix:
-    - MOLECULE_DISTRO: centos7
-    # - MOLECULE_DISTRO: ubuntu/16.04
-    # - MOLECULE_DISTRO: ubuntu/18.04
+    - MOLECULE_DISTRO: centos:7
+    - MOLECULE_DISTRO: ubuntu:16.04
+    - MOLECULE_DISTRO: ubuntu:18.04
 
 install:
   # Install test dependencies.
@@ -19,11 +19,11 @@ install:
 
 before_script:
   # Use actual Ansible Galaxy role name for the project directory.
-  - molecule test
+  - 
 
 script:
   # Run tests.
-  - $(which ansible-playbook) ./tests/test.yml
+  - molecule test
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
