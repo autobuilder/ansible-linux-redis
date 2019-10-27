@@ -13,12 +13,12 @@ lint:
 
 platforms:
   - name: instance
-    image: "centos:7"
+    log: true
+    image: "${MOLECULE_DISTRO}"
     privileged: true
 
 provisioner:
   name: ansible
-  log: true
   lint:
     name: ansible-lint
 
