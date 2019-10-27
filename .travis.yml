@@ -17,10 +17,6 @@ install:
   - pip install ansible
   - pip install ansible-lint
 
-before_script:
-  # Use actual Ansible Galaxy role name for the project directory.
-  - 
-
 script:
   # Run tests.
   - molecule test
