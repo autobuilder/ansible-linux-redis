@@ -8,8 +8,8 @@ env:
     - ROLE_NAME: ansible-linux-redis
   matrix:
     - MOLECULE_DISTRO: centos/7
-    - MOLECULE_DISTRO: ubuntu/16.04
-    - MOLECULE_DISTRO: ubuntu/18.04
+    # - MOLECULE_DISTRO: ubuntu/16.04
+    # - MOLECULE_DISTRO: ubuntu/18.04
 
 install:
   # Install test dependencies.

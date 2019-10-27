@@ -18,6 +18,7 @@ platforms:
 
 provisioner:
   name: ansible
+  log: true
   lint:
     name: ansible-lint
 
