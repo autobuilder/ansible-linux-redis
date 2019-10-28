@@ -17,7 +17,8 @@ platforms:
     privileged: true
   - name: instance
     image: ubuntu:16.04
-    privileged: true  - name: instance
+    privileged: true
+  - name: instance
     image: ubuntu:18.04
     privileged: true
 
