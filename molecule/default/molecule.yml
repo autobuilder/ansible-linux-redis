@@ -13,7 +13,7 @@ lint:
 
 platforms:
   - name: instance
-    image: centos:7
+    image: autobuilder247/docker-centos7-ansible:latest
     privileged: true
     pre_build_image: true
 
