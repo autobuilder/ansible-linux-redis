@@ -2,6 +2,6 @@
 
 # vars file for redhat ansible os family
 
-redis_daemon: 'redis.service'
+redis_daemon: 'redis'
 redis_package: 'redis'
 redis_conf_path: '/etc/redis.conf'
