@@ -6,6 +6,9 @@ services: docker
 env:
   global:
     - ROLE_NAME: ansible-linux-redis
+  matrix:
+    - MOLECULE_DISTRO: centos7
+    - MOLECULE_DISTRO: ubuntu1604
 
 install:
   # Install test dependencies.
