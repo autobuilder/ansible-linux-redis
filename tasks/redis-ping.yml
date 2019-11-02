@@ -1,0 +1,5 @@
+---
+
+# - name: "Ping | Run ping test using redis-cli"
+#   command: "redis-cli ping"
+#   changed_when: false

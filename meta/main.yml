@@ -1,3 +1,5 @@
+---
+
 galaxy_info:
   author: AutoBuilder
   description: Ansible role for install Redis.
@@ -12,5 +14,5 @@ galaxy_info:
       versions:
         - bionic
         - xenial
-  galaxy_tags: [ "redis" ]
+  galaxy_tags: ["redis"]
 dependencies: []

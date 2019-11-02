@@ -1,0 +1,7 @@
+---
+
+# vars file for debian ansible os family
+
+redis_daemon: 'redis-server'
+redis_package: 'redis-server'
+redis_conf_path: '/etc/redis/redis.conf'

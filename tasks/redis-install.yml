@@ -13,7 +13,8 @@
   when: ansible_os_family|lower == 'redhat'
 
 - name: "Install | Get Redis using Yum"
-  yum:
+  package:
     name: "{{ redis_package }}"
     state: present
+    enablerepo: "{{ redis_enable_repo | default(omit, true) }}"
   when: ansible_os_family|lower == 'redhat'

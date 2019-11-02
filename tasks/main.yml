@@ -3,14 +3,22 @@
 - name: "include redis-validate.yml"
   include_tasks: redis-validate.yml
   tags:
-    validate
+    - validate
+
+- name: "Include ansible os family specific variables"
+  include_vars: "{{ ansible_os_family|lower }}.yml"
 
 - name: "include redis-install.yml"
   include_tasks: redis-install.yml
   tags:
-    install
+    - install
 
 - name: "include redis-config.yml"
   include_tasks: redis-config.yml
   tags:
-    config
+    - config
+
+- name: "include redis-ping.yml"
+  include_tasks: redis-ping.yml
+  tags:
+    - ping
