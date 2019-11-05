@@ -7,7 +7,7 @@
 
 [![Build Status](https://travis-ci.org/autobuilder/ansible-linux-redis.svg?branch=master)](https://github.com/autobuilder/ansible-linux-redis)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat)](https://opensource.org/licenses/Apache-2.0)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/autobuilder/ansible-isp-speedtest/issues)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/autobuilder/ansible-linux-redis/issues)
 
 ![Platform](https://img.shields.io/badge/platform-ubuntu-dd4814.svg?style=flat) 
 ![Platform](https://img.shields.io/badge/platform-centos-932279.svg?style=flat)
@@ -71,6 +71,6 @@ See the [LICENSE][license] file that accompanies this distribution for the full 
 [redisio]: https://redis.io
 [kitchenci]: https://kitchen.ci
 [apache2]: https://www.apache.org/licenses/LICENSE-2.0.html
-[license]: https://github.com/autobuilder/ansible-isp-speedtest/blob/master/LICENSE
+[license]: https://github.com/autobuilder/ansible-linux-redis/blob/master/LICENSE
 [autobuilder]: https://github.com/autobuilder
 [ansiblelint]: https://docs.ansible.com/ansible-lint/
