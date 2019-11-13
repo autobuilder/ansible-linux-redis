@@ -1,4 +1,4 @@
-name: ansible-role-pipeline
+name: Ansible-Lint
 
 on: [push]
 
@@ -10,4 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Lint Ansible Role
-      uses: ./github/workflows/ansible-lint.yml
+      uses: ansible/ansible-lint-action@master
+      with:
+        targets: "."
+        args: ""
