@@ -1,4 +1,4 @@
-name: CI
+name: Ansible Lint
 
 on: [push]
 
@@ -9,7 +9,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Ansible-lint
-      uses: ansible/ansible-lint-action@v4.1.0
+    - name: Lint Ansible Role
+      uses: ansible/ansible-lint-action@master
       with:
-        targets: "."
+        targets: ""
+        args: ""
