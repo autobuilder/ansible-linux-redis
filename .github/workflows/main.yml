@@ -1,0 +1,13 @@
+name: ansible-role-pipeline
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Lint Ansible Role
+      uses: ./github/workflows/ansible-lint.yml
