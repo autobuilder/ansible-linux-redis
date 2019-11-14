@@ -5,7 +5,7 @@ on: [push]
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: autobuilder247/docker-ubuntu-molecule
 
     steps:
     - uses: actions/checkout@v1
