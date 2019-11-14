@@ -8,6 +8,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Install dependencies
       run: |
+        which pip
         pip install --upgrade pip
         pip install molecule docker
         pip install ansible
