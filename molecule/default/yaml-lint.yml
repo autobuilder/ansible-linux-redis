@@ -1,8 +1,7 @@
 ---
 
 extends: default
-ignore: |
-  .github/workflows/main.yml
+ignore: .github/*
 rules:
   line-length:
     level: warning
