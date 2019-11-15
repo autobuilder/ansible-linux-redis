@@ -1,6 +1,6 @@
 parseable: true
 quiet: false
-use_default_rules: true
+use_default_rules: false
 verbosity: 1
 exclude_paths:
   - ./.github/workflows/main.yml
