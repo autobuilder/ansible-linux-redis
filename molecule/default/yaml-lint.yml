@@ -1,10 +1,5 @@
 ---
-
-exclude_paths:
-  - ./.github
-
 extends: default
-ignore: .github/*
 rules:
   line-length:
     level: warning
