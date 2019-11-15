@@ -1,7 +1,7 @@
 ---
 
 exclude_paths:
-  - ./.github/workflows/main.yml
+  - ./.github
 
 extends: default
 ignore: .github/*
