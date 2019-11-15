@@ -1,9 +1,10 @@
 ---
 
+exclude_paths:
+  - .github/workflows/main.yml
+
 extends: default
 ignore: .github/*
 rules:
   line-length:
     level: warning
-  exclude_paths:
-    - .github/workflows/main.yml
