@@ -5,9 +5,9 @@
 <img src="https://www.ansible.com/hubfs/2016_Images/Assets/Ansible-Mark-Large-RGB-Pool.png?hsLang=en-us" width="10%" height="10%" alt="Ansible logo" align="right"/>
 <img src="https://avatars1.githubusercontent.com/u/1529926?s=400&v=4" width="11%" height="11%" alt="Redis logo" align="right"/>
 
-[![Build Status](https://travis-ci.org/autobuilder/ansible-linux-redis.svg?branch=master)](https://github.com/autobuilder/ansible-linux-redis)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat)](https://opensource.org/licenses/Apache-2.0)
+[![License](https://img.shields.io/github/license/autobuilder/ansible-linux-redis)](https://opensource.org/licenses/MIT)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/autobuilder/ansible-linux-redis/issues)
+[![Build Status](https://travis-ci.org/autobuilder/ansible-linux-redis.svg?branch=master)](https://github.com/autobuilder/ansible-linux-redis)
 
 ![Platform](https://img.shields.io/badge/platform-ubuntu-dd4814.svg?style=flat) 
 ![Platform](https://img.shields.io/badge/platform-centos-932279.svg?style=flat)
@@ -58,7 +58,7 @@ Tested platforms are the below linux-based distros:
 
 #### License:
 
-This project is made available under the terms of the [Apache-2.0][apache2].
+This project is made available under the terms of the [MIT][mit].
 
 See the [LICENSE][license] file that accompanies this distribution for the full text of the license.
 
@@ -68,9 +68,9 @@ See the [LICENSE][license] file that accompanies this distribution for the full 
 
 [AutoBuilder][autobuilder]
 
-[redisio]: https://redis.io
-[kitchenci]: https://kitchen.ci
-[apache2]: https://www.apache.org/licenses/LICENSE-2.0.html
-[license]: https://github.com/autobuilder/ansible-linux-redis/blob/master/LICENSE
 [autobuilder]: https://github.com/autobuilder
+[mit]: https://opensource.org/licenses/MIT
+[license]: https://github.com/autobuilder/ansible-linux-redis/blob/master/LICENSE
 [ansiblelint]: https://docs.ansible.com/ansible-lint/
+[kitchenci]: https://kitchen.ci
+[redisio]: https://redis.io
