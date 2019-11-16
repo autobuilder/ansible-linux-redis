@@ -4,7 +4,7 @@ galaxy_info:
   author: AutoBuilder
   description: Ansible role for install Redis.
   company: None
-  license: "license (Apache)"
+  license: "license (BSD, MIT)"
   min_ansible_version: 2.0
   platforms:
     - name: EL
